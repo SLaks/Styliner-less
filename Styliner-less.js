@@ -1,6 +1,7 @@
 /*jshint node: true, camelcase: true, eqeqeq: true, forin: true, immed: true, latedef: true, newcap: true, noarg: true, undef: true, globalstrict: true*/
 "use strict";
 var Q = require('q');
+var qfs = require('q-fs');
 
 var less = require('less');
 try {
@@ -12,4 +13,7 @@ try {
 		throw e;
 }
 
-Styliner.styleFormats.less = Q.nbind(less.render, less);
+var parseLess = Q.nbind(less.render, less);
+Styliner.styleFormats.less = function (source, path) {
+	return parseLess(source, { paths: [qfs.directory(path)] });
+};
