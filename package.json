@@ -1,5 +1,5 @@
 {
-  "name": "Styliner-LESS",
+  "name": "styliner-less",
   "version": "0.0.1",
   "description": "Adds LESS parsing to Styliner.",
   "keywords": [
@@ -22,7 +22,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "Styliner": "*",
+    "styliner": "*",
     "less": "~1.3.1"
   }
 }

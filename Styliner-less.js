@@ -5,7 +5,7 @@ var qfs = require('q-fs');
 
 var less = require('less');
 try {
-	var Styliner = require('Styliner');
+	var Styliner = require('styliner');
 } catch (e) {
 	// For local testing
 	var Styliner = require('..');
