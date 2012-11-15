@@ -1,0 +1,28 @@
+{
+  "name": "Styliner-LESS",
+  "version": "0.0.1",
+  "description": "Adds LESS parsing to Styliner.",
+  "keywords": [
+    "email",
+    "html",
+    "less"
+  ],
+  "main": "Styliner-less.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Unroll-Me/Website.git"
+  },
+  "author": "Schabse Laks",
+  "contributors": [
+    {
+      "name": "SLaks",
+      "email": "Dev@SLaks.net",
+      "url": "http://slaks.net"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "Styliner": "*",
+    "less": "~1.3.1"
+  }
+}
