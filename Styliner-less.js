@@ -13,7 +13,7 @@ try {
 		throw e;
 }
 
-var parseLess = Q.nbind(less.render, less);
+var parseLess = Q.nfbind(less.render.bind(less));
 Styliner.styleFormats.less = function (source, path) {
 	return parseLess(source, { paths: [qfs.directory(path)] });
 };
