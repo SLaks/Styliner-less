@@ -1,7 +1,9 @@
 {
   "name": "styliner-less",
   "version": "0.0.1",
-  "description": "Adds LESS parsing to Styliner.",
+  "description": "Adds LESS support to Styliner.",
+  "homepage": "https://github.com/SLaks/Styliner-less",
+  "author": "Schabse Laks <Dev@SLaks.net> (http://slaks.net)",
   "keywords": [
     "email",
     "html",
@@ -10,18 +12,11 @@
   "main": "Styliner-less.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Unroll-Me/Website.git"
+    "url": "git://github.com/SLaks/Styliner-less.git"
   },
-  "author": "Schabse Laks",
-  "contributors": [
-    {
-      "name": "SLaks",
-      "email": "Dev@SLaks.net",
-      "url": "http://slaks.net"
-    }
-  ],
   "license": "MIT",
   "dependencies": {
+    "q": ">=0.8.11",
     "styliner": "*",
     "less": "~1.3.1"
   }
