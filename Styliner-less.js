@@ -8,6 +8,6 @@ var Styliner = require('styliner');
 
 var parseLess = Q.nfbind(less.render.bind(less));
 
-Styliner.styleFormats.less = function (source, path) {
-	return parseLess(source, { paths: [path.dirname(path)] });
+Styliner.styleFormats.less = function (source, filename) {
+	return parseLess(source, { paths: [path.dirname(filename)] });
 };
