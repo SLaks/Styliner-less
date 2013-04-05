@@ -4,10 +4,11 @@ var Q = require('q');
 var path = require('path');
 
 var less = require('less');
-var Styliner = require('styliner');
 
 var parseLess = Q.nfbind(less.render.bind(less));
 
-Styliner.styleFormats.less = function (source, path) {
-	return parseLess(source, { paths: [path.dirname(path)] });
-};
+module.exports = function setupLess(Styliner) {
+	Styliner.styleFormats.less = function (source, path) {
+		return parseLess(source, { paths: [path.dirname(path)] });
+	};
+}
