@@ -17,6 +17,6 @@
   "license": "MIT",
   "dependencies": {
     "q": ">=0.8.11",
-    "less": "*"
+    "less": "1.x"
   }
 }
